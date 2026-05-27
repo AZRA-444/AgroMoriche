@@ -10,7 +10,7 @@ function abrirModal(boton) {
 
     if (parrafo) {
         parrafo.style.fontSize = '1.5rem';
-        parrafo.style.transform = 'translateY(-25px)';
+        parrafo.style.transform = 'translateY(-22px)';
 
     }
 
