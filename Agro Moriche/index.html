@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Agro Moriche</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+
+            <div class="left">
+                <img src="assets/branding/Imagenotipo-AgroMariche.svg" class="logo">
+            </div>
+
+            <div class="center">
+                <div class="search">
+                    <input type="text" id="search" placeholder="Buscar productos...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <p class="no-results" style="display:none;">
+                    No se encontraron productos
+                </p>
+            </div>
+
+            <div class="right">
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="pages/catalogo.html">Productos</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="assets/branding/Logo-AgroMariche.svg" alt="Agro Mariche Logo" class="hero-logo">
+
+            <h2>Abriendo los Surcos del Porvenir</h2>
+
+            <p>
+                Soluciones agrícolas para el crecimiento y productividad de tu campo
+            </p>
+
+            <a href="pages/catalogo.html" class="hero-btn">Ver catálogo</a>
+        </div>
+
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#F7F4F0"
+                    d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,122.7C1120,107,1280,117,1360,122.7L1440,128L1440,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <h2>Productos Destacados</h2>
+
+        <div class="product-container">
+
+            <!-- HERBICIDA 1-->
+            <div class="cards">
+                <div class="img-producto">
+                    <div class="circle herbicidas"></div>
+                    <img src="assets/images/glifocal.png" alt="fertilizante">
+                </div>
+                <div class="card-content">
+                    <h3>GLIFOCAL 480SL</h3>
+                    <h4>Herbicida Agrícola / Control Total</h4>
+                    <p>Precio: 8,50$ - 1 lt.</p>
+                    <button class="btnVerMas herbicidas" onclick="abrirModal(this)">
+                        Ver Producto
+                    </button>
+                </div>
+                <!-- CONTENIDO MODAL -->
+                <div class="modal-content">
+                    <div class="modal-description">
+                        <p>
+                            <strong>Descripción:</strong>
+
+                            Herbicida sistémico no selectivo de alta eficacia,
+                            diseñado para el control post-emergente de una amplia
+                            variedad de malezas gramíneas y de hoja ancha.
+                        </p>
+                    </div>
+                    <div class="modal-benefits">
+                        <h3>Beneficios clave</h3>
+                        <ul>
+                            <li>Acción sistémica completa.</li>
+
+                            <li>Ideal para preparación de suelos.</li>
+
+                            <li>Elimina la maleza desde la raíz.</li>
+
+                            <li>Mayor rendimiento del cultivo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-extra">
+                        <span>Uso agrícola</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INSECTICIDAS 1-->
+            <div class="cards">
+                <div class="img-producto">
+                    <div class="circle insecticidas"></div>
+                    <img src="assets/images/bifevim.png" alt="bifevim">
+                </div>
+                <div class="card-content">
+                    <h3>BIFEVIM 50EC</h3>
+                    <h4>Insecticida Agrícola / Concentrado Emulsionable</h4>
+                    <p>Precio: 17,50$ - 1 lt.</p>
+                    <button class="btnVerMas insecticidas" onclick="abrirModal(this)">
+                        Ver Producto
+                    </button>
+                </div>
+                <!-- CONTENIDO MODAL -->
+                <div class="modal-content">
+                    <div class="modal-description">
+                        <p>
+                            <strong>Descripción:</strong>
+                            Insecticida de amplio espectro y acción rápida, formulado como concentrado emulsionable (EC)
+                            para garantizar una máxima cobertura y adherencia en el cultivo. Ofrece un control inmediato
+                            por contacto e ingestión contra las plagas más agresivas que afectan el rendimiento de las
+                            siembras.
+                        </p>
+                    </div>
+                    <div class="modal-benefits">
+                        <h3>Beneficios clave</h3>
+                        <ul>
+                            <li>Poder de derribo inmediato: Acción rápida contra insectos chupadores y minadores.</li>
+
+                            <li>Protección prolongada: Mantiene el cultivo protegido por más tiempo, reduciendo las
+                                aplicaciones constantes.</li>
+
+                            <li>Control eficaz de: Mosca Blanca, Áfidos, Trips y Minador de la Hoja.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-extra">
+                        <span>Categoría toxicológica: Moderadamente Tóxico (Banda Amarilla).</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--FERTILIZANTES FOLIARES 1-->
+            <div class="cards">
+                <div class="img-producto">
+                    <div class="circle fertilizante"></div>
+                    <img src="assets/images/zolfo.png" alt="zolfo">
+                </div>
+                <div class="card-content">
+                    <h3>ZOLFO</h3>
+                    <h4>Fertilizante Foliar Líquido / Nutrición Azufrada</h4>
+                    <p>Precio: 10,71$ - 1 lt.</p>
+                    <button class="btnVerMas fertilizante" onclick="abrirModal(this)">
+                        Ver Producto
+                    </button>
+                </div>
+                <!-- CONTENIDO MODAL -->
+                <div class="modal-content">
+                    <div class="modal-description">
+                        <p>
+                            <strong>Descripción:</strong>
+                            Fertilizante foliar líquido concentrado, diseñado para aportar azufre de alta asimilación
+                            directamente a las hojas del cultivo. Su fórmula balanceada corrige deficiencias
+                            nutricionales críticas, estimulando la síntesis de proteínas y mejorando el metabolismo
+                            general de la planta para un desarrollo más fuerte.
+                        </p>
+                    </div>
+                    <div class="modal-benefits">
+                        <h3>Beneficios clave</h3>
+                        <ul>
+                            <li>Nutrición eficiente: Absorción rápida que optimiza el aprovechamiento del nitrógeno y
+                                otros nutrientes esenciales.</li>
+
+                            <li>Efecto de resistencia: El azufre fortalece las defensas naturales de la planta frente a
+                                condiciones de estrés ambiental y ataques patógenos.
+                            </li>
+
+                            <li>Mejora el rendimiento: Estimula el crecimiento vegetativo sano y mejora la calidad final
+                                de la cosecha.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-extra">
+                        <span>Categoría: Fertilizantes y Nutrición Vegetal, uso agrícola (Foliar).</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--FUNGICIDAS 1-->
+            <div class="cards">
+                <div class="img-producto">
+                    <div class="circle fungicidas"> </div>
+                    <img src="assets/images/covinex.png" alt="covinex">
+                </div>
+                <div class="card-content">
+                    <h3>COVINEX FORTE</h3>
+                    <h4>Insecticida Agrícola / Fórmula Reforzada</h4>
+                    <p>Precio: 51,00$ - 1 Kg.</p>
+                    <button class="btnVerMas fungicidas" onclick="abrirModal(this)">
+                        Ver Producto
+                    </button>
+                </div>
+                <!-- CONTENIDO MODAL -->
+                <div class="modal-content">
+                    <div class="modal-description">
+                        <p>
+                            <strong>Descripción:</strong>
+                            Fungicida de amplio espectro y alta potencia, diseñado con una formulación reforzada para
+                            el control de plagas que presentan alta resistencia en el campo. Actúa de forma simultánea
+                            por contacto e ingestión, atacando eficazmente el sistema nervioso e interrumpiendo el ciclo
+                            biológico de los insectos de manera inmediata.
+                        </p>
+                    </div>
+                    <div class="modal-benefits">
+                        <h3>Beneficios clave</h3>
+                        <ul>
+                            <li>Fórmula de choque potenciada: Ofrece un excelente poder de derribo (knock-down) que
+                                limpia el cultivo rápidamente ante altas poblaciones de plagas.
+                            </li>
+
+                            <li>Acción residual extendida: Su persistencia en el follaje garantiza que el cultivo
+                                permanezca protegido por más tiempo, espaciando las aplicaciones necesarias.
+                            </li>
+
+                            <li>Control polivalente: Altamente eficaz para erradicar el complejo de insectos
+                                masticadores, chupadores y larvas de lepidópteros que amenazan la rentabilidad de la
+                                cosecha.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-extra">
+                        <span>Categoría: Fungicida, uso agrícola (Foliar).</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mas-productos">
+            <a href="pages/catalogo.html">Ver mas productos</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+
+        <div class="contact-wrapper">
+
+            <div class="contact-card">
+
+                <h2>Contáctanos</h2>
+                <p>Estamos disponibles para atenderte y asesorarte en tus necesidades agrícolas.</p>
+
+                <div class="contact-item">📍 Anzoategui, Venezuela</div>
+                <div class="contact-item">📞 +58 0424-855-5452</div>
+                <div class="contact-item"> ✉️ agromoriche50@gmail.com</div>
+
+
+                <a href="https://wa.me/584248555452/?text= ¡Hola%20me%20gustaria%20más%20información!" class="btn-anim">
+                    <span class="text">Escríbenos por WhatsApp</span>
+                    <i class="fa-brands fa-whatsapp icon"></i>
+                </a>
+            </div>
+
+            <div class="map-card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d492.7270368347031!2d-64.22778961036312!3d8.896664991694935!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcd830050e5c7cf%3A0x21d6c207dc426a5!2sAgromoriche!5e0!3m2!1ses-419!2sve!4v1778802295371!5m2!1ses-419!2sve"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <img class="logo-footer" src="assets/branding/Logo-AgroMariche.svg" alt="Logo-AgroMariche">
+            </div>
+
+            <div class="center">
+                <nav class="nav-social">
+                    <a href="https://wa.me/584248555452/?text= ¡Hola%20me%20gustaria%20más%20información!"
+                        class="social-link"><i class="fa-brands fa-whatsapp icon"></i></a>
+                    <a href="https://www.instagram.com/agromoriche.ca?igsh=MW0xaWR4OHhkcm10cA%3D%3D"
+                        class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@agromoriche" class="social-link"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                </nav>
+            </div>
+
+            <div class="right">
+
+                <p class="footer-text">
+                    Abriendo los Surcos del Porvenir
+                </p>
+
+                <p class="footer-text">
+                    Comprometidos con la calidad, la productividad y el fortalecimiento del sector agrícola.
+                </p>
+            </div>
+        </div>
+        <p class="footer-copy">
+            © 2026 Agro Moriche. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script src="js/modals.js"></script>
+    <script src="js/busquedas.js"></script>
+
+    <div class="modal-overlay" id="productModal" onclick="cerrarModal(event)">
+        <div class="modal-body" onclick="event.stopPropagation()">
+
+            <button class="close-modal" onclick="cerrarModal()">&times;</button>
+
+            <div id="modalDynamicBody"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
