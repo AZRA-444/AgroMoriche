@@ -592,6 +592,8 @@ footer {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 14px;
+        margin: 5px 20px;
+        padding: 10px;
     }
 
     .cards {
@@ -681,18 +683,24 @@ footer {
 
 @media (max-width: 400px) {
 
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin: 5px 25px;
+    }
+
     .products h2 {
         font-size: 1.7rem;
     }
 
-    .cards {
-        width: 180px;
-        padding: 10px 5px;
-        border-radius: 18px;
-    }
-    
     .img-producto {
         height: 160px;
+    }
+
+    .cards {
+        width: 175px;
+        padding: 5px 3px;
+        border-radius: 18px;
     }
 
     .circle {
