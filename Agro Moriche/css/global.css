@@ -595,7 +595,7 @@ footer {
     }
 
     .cards {
-        width: 185px;
+        width: 180px;
         padding: 15px 10px;
         border-radius: 18px;
     }
@@ -685,6 +685,12 @@ footer {
         font-size: 1.7rem;
     }
 
+    .cards {
+        width: 180px;
+        padding: 10px 5px;
+        border-radius: 18px;
+    }
+    
     .img-producto {
         height: 160px;
     }
